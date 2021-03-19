@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {}
+// xl
+@media (max-width: 1199px) {}
+// lg
+@media (max-width: 992px) {
+  .main-menu{
+    display: none;
+    padding: 20px;
+  }
+  .mobile-menu-button{
+    display: block;
+  }
+}
+// md
+@media (max-width: 768px) {}
+// sm
+@media (max-width: 576px) {}
+@media (max-width: 420px) {}
+@media (max-width: 320px) {}
