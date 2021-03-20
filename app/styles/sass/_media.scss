@@ -10,10 +10,41 @@
   .mobile-menu-button{
     display: block;
   }
+  .item-title-content{
+    padding: 40px 30px;
+  }
 }
 // md
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .first-section{
+    pfdding-top: $gutter/2;
+  }
+  .container-fluid{
+    padding: 0 $gutter/2;
+  }
+  .top__ad{
+    margin-bottom: $gutter/2;
+  }
+  .no-gutters{
+    .pattern{
+      margin-bottom: $gutter/2;
+    }
+  }
+}
 // sm
-@media (max-width: 576px) {}
-@media (max-width: 420px) {}
+@media (max-width: 576px) {
+
+}
+// xs
+@media (max-width: 420px) {
+  .logo{
+    font-size: 1.9rem;
+    padding-left: 15px;
+  }
+  .search-wrap{
+    search{
+      padding-right: $gutter/2;
+    }
+  }
+}
 @media (max-width: 320px) {}
