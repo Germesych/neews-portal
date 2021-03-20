@@ -1,0 +1,156 @@
+.ad{
+  text-align: center;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.top__ad{
+  margin-bottom: $gutter;
+}
+.container-fluid{
+  max-width: 1346px;
+  padding: 0 $gutter;
+}
+section{
+  background-color: #fafafa;
+  padding: $gutter 0;
+  h2{
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: 800;
+  }
+}
+.item-title{
+  min-height: 340px;
+  &-content{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 40px;
+    z-index: 1;
+    h3{
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.25;
+      font-size: 1.9rem;
+      a{
+        &:hover{
+          text-decoration: underline
+        }
+      }
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+  }
+}
+.pattern{
+  background-color: $dark;
+  position: relative;
+  display: block;
+  &::before{
+    content: "";
+    transition: opacity .25s ease, top .25s ease, left .25s ease, bottom .25s ease, right .25s ease;
+    z-index: 1;
+    position: absolute;
+    border: #fff solid 1px;
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+  }
+  &:hover{
+    &::before{
+      content: "";
+      opacity: .2;
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+}
+.overlay{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+  &::before{
+    content: '';
+    background-color: $dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .55;
+    transition: opacity .25s ease;
+    z-index: 1;
+  }
+  &:hover{
+    &::before{
+      opacity: 0.75;
+    }
+  }
+}
+.item-social{
+  margin-top: 10px;
+  .fa{
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+}
+.item-comments{
+  display: inline-block;
+  margin-right: 20px;
+  &-count{
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    &::after{
+      content: '\2022';
+      position: absolute;
+      font-size: 2rem;
+      top: -5px;
+      bottom: 0;
+      margin-left: 10px;
+      margin-right: 10px;
+      opacity: .25;
+    }
+  }
+}
+.likely-custom{
+  display: inline-block;
+  font-size: 1.2rem;
+  .likely__button{
+    padding-left: 15px;
+  }
+  > div{
+    padding: 0 4px 0 3px;
+    position: relative;
+    cursor: pointer;
+    margin: 6px 2px 0;
+    border: 1px solid #fff;
+    border-radius: 2px;
+  }
+  .likely__counter{
+    display: none;
+  }
+  svg{
+    width: 11px;
+    height: auto;
+    position: absolute;
+    top: 3.5px;
+    left: 4px;
+    path{
+      fill: #fff;
+    }
+  }
+  > *{
+    display: inline-block;
+  }
+}

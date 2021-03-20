@@ -83,3 +83,8 @@ h6 {
 .site-container{
   overflow: hidden;
 }
+.img-responsive{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
