@@ -27,6 +27,7 @@
       }
     }
   }
+
 }
 // sm
 @media (max-width: 768px) {
@@ -64,10 +65,13 @@
       margin-bottom: 5px;
     }
   }
-
 }
 // xs
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .fourth-section{
+    padding: $gutter/1.5 0;
+  }
+}
 // xs
 @media (max-width: 420px) {
   .logo{

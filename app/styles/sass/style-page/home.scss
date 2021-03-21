@@ -207,11 +207,13 @@ section {
   min-height: 280px;
   margin: $gutter/2 0;
   color: $textcolor;
+
   &:hover {
-    h3{
+    h3 {
       text-decoration: underline;
     }
   }
+
   &-content {
     border-left: #dfdfdf 1px solid;
     border-bottom: #dfdfdf 1px solid;
@@ -221,86 +223,129 @@ section {
     bottom: 0;
     width: 80%;
     z-index: 1;
-    h3{
+
+    h3 {
       font-size: 1.7rem;
       line-height: 1.2;
       margin: 0;
     }
   }
 }
+
 .date {
   font-size: 1.3rem;
   color: $accent;
   font-family: baron-g, sans-serif;
   font-weight: bold;
 }
-.aside-box{
+
+.aside-box {
   margin-bottom: $gutter;
   text-align: center;
-  .img-responsive{
+
+  .img-responsive {
     display: inline-block;
   }
 }
+
 // --- third-section ---
-.dark-section{
+.dark-section {
   padding: 30px 0;
   background-color: $dark;
-  h2{
-    a{
+
+  h2 {
+    a {
       color: #fff;
     }
   }
 }
-.col-item{
+
+.col-item {
   margin: 12px 0 15px;
-  a{
+
+  a {
     text-decoration: none;
     transition: color .25s ease;
-    &:hover, &.hover{
+
+    &:hover, &.hover {
       text-decoration: underline;
     }
   }
-  .item-comments{
+
+  .item-comments {
     margin-top: 2px;
-    .fa, .item-comments-count{
+
+    .fa, .item-comments-count {
       color: #49505a;
     }
-    .fa{
+
+    .fa {
       font-size: 1.2rem;
       margin-left: 20px;
       margin-right: 5px;
     }
-    .item-comments-count{
-      &::after{
+
+    .item-comments-count {
+      &::after {
         left: -45px;
         color: #49505a;
         opacity: 1;
       }
-      &:hover{
+
+      &:hover {
         color: #49505a;
       }
     }
   }
-  .date{
+
+  .date {
     display: inline-block;
     margin-top: 0;
   }
-  h4{
+
+  h4 {
     font-size: 1.5rem;
     font-weight: normal;
     margin: 0;
     line-height: 1.35;
   }
-  .col-item-meta{
+
+  .col-item-meta {
     margin-bottom: 8px;
     margin-top: 6px;
   }
-  &.col-item-dark{
-    a{
+
+  &.col-item-dark {
+    a {
       color: #a4a7ab;
-      &:hover, &.hover{
+
+      &:hover, &.hover {
         color: #fff;
       }
     }
+  }
+}
+
+// --- fourth-section ---
+.fourth-section {
+  background-color: #f5f5f5;
+  padding-top: 30px;
+
+  &-header {
+    margin-bottom: 10px;
+  }
+
+  .item-title {
+    min-height: 300px;
+
+  }
+
+  .date {
+    display: inline-block;
+    margin-left: 20px;
+    color: #fff;
+  }
+  .item-social{
+    margin-top: 1px;
   }
 }
