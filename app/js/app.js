@@ -10,4 +10,9 @@ import "./moduls/maps";
 import "./moduls/slider";
 import "./moduls/jq-scripts";
 document.addEventListener('DOMContentLoaded', () => {
+    const pageArticle = document.querySelector('.page-article');
+    if(pageArticle){
+        console.log('TRUE')
+        document.body.classList.add('page');
+    }
 })

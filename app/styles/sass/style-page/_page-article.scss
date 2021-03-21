@@ -1,0 +1,62 @@
+.page-article {
+  .page-header.overlay {
+    &::before {
+      opacity: 1;
+      background-color: transparent;
+      background-image: linear-gradient(rgba(#000000, .2), rgba(#000000, .7));
+      z-index: 0;
+    }
+
+    height: 80vh;
+    min-height: 460px;
+    color: #fff;
+    position: relative;
+  }
+
+}
+
+.top-line-page-article {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.page-header {
+  &-content {
+    position: absolute;
+    width: 100%;
+    bottom: 15%;
+  }
+  &-meta{
+    > * {
+      display: inline-block;
+    }
+    .date{
+      color: #fff;
+      font-size: 1.5rem;
+    }
+    h1{
+      font-size: 3.2rem;
+      line-height: 1.2;
+      margin: 15px 0;
+      display: block;
+    }
+    .item-comments-count{
+      color: #fff;
+    }
+  }
+}
+.page-category-link{
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $accent;
+  padding: 1px 6px;
+  text-decoration: none;
+  font-weight: 800;
+  margin-right: 5px;
+  &:hover, &:focus{
+    color: #fff;
+    text-decoration: none;
+  }
+}

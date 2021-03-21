@@ -27,7 +27,12 @@
       }
     }
   }
-
+  .page{
+    .top-menu{
+      top: 65px;
+      position: relative;
+    }
+  }
 }
 // sm
 @media (max-width: 768px) {
@@ -89,6 +94,18 @@
       }
     }
   }
+  .page-header{
+    &-meta{
+      h1{
+        font-size: 2.4rem;
+        margin: 10px 0;
+      }
+    }
+    &.overlay::before{
+      background-image: linear-gradient(rgba(#000, .3), rgba(#000, .75));
+    }
+  }
+
 }
 // xs
 @media (max-width: 576px) {

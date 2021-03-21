@@ -1,0 +1,20 @@
+Вставка модуля лаков
+<!--#include virtual="/parts/likely.html" -->
+
+Вставка боковой панели
+<!--#include virtual="/parts/aside.html" -->
+
+Вставка переменной для title
+<!--#set var="title" value="GEEKTOP - Новости из мира IT" -->
+
+Вставка верхнего рекламного блока
+<!--#include virtual="/parts/top-ad.html" -->
+
+Вставка блока "DIY"
+<!--#include virtual="/parts/type-one.html" -->
+
+Вставкав шапки сайта
+<!--#include virtual="/parts/header.html" -->
+
+Вставка подвала сайта
+<!--#include virtual="/parts/footer.html" -->
