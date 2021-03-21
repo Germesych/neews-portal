@@ -107,5 +107,12 @@
       padding-right: $gutter/2;
     }
   }
+  .cat-list{
+    padding-top: 0;
+  }
+  .cat-list-item:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 320px) {}
