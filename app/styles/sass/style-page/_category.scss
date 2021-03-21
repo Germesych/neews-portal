@@ -81,6 +81,65 @@ h2 {
   background-color: transparent;
   padding: 0;
 }
+.cat-list{
+  padding-top: $gutter;
+  background-color: #fff;
+}
+a.cat-list-item{
+  color: $textcolor;
+  display: block;
+  text-decoration: none;
+  margin-bottom: $gutter/1.5;
+  margin-top: $gutter/1.5;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #dfdfdf;
+  h2, h3{
+    transition: color .25s ease;
+    line-height: 1.2;
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  img{
+    transition: opacity .25s ease;
+    margin-bottom: 12px;
+  }
+  p{
+    font-size: 1.54rem;
+    margin-top: 10px;
+  }
+  .date{
+    margin-top: 5px;
+  }
+  &:hover{
+    .pattern{
+      &::before{
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+        opacity: 0.2;
+        z-index: 2;
+      }
+      img{
+        //opacity: 0.75;
+      }
+    }
+    h2, h3{
+      text-decoration: underline;
+      color: $accent;
+    }
+    p{
+      color: $textcolor;
+    }
+  }
+  &:last-child{
+    border-bottom: 0;
+  }
+}
+.main-aside{
+  margin-bottom: $gutter;
+}
 
 
 
