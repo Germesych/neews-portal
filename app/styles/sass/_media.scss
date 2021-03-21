@@ -39,7 +39,7 @@
     padding: 0 $gutter/2;
   }
   .top__ad{
-    margin-bottom: $gutter/2;
+    padding-bottom: $gutter/2;
   }
   .no-gutters{
     .pattern{
@@ -94,6 +94,9 @@
 @media (max-width: 576px) {
   .fourth-section{
     padding: $gutter/1.5 0;
+  }
+  .all-posts-header{
+    margin-top: $gutter/2;
   }
 }
 // xs
