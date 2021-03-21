@@ -70,6 +70,17 @@
       margin-bottom: $gutter/2;
     }
   }
+  nav.soc{
+    padding: 10px 0 0;
+    li{
+      a{
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+        line-height: 38px;
+      }
+    }
+  }
 }
 // xs
 @media (max-width: 576px) {

@@ -1,3 +1,7 @@
+.text-center{
+  text-align: center;
+  margin: 0 auto;
+}
 .ad {
   text-align: center;
   width: 100%;
@@ -422,5 +426,118 @@ section {
   }
   .pattern{
     margin-bottom: $gutter;
+  }
+}
+.button{
+  display: inline-block;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: $accent;
+  padding: 12px 40px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 10em;
+  text-align: center;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color .1s ease;
+  &:hover, &:focus{
+    text-decoration: none;
+    color: #fff;
+  }
+  &:hover{
+    background-color: lighten($accent, 5%);
+  }
+  &:active{
+    background-color: darken($accent, 5%);
+  }
+}
+.s-more{
+  padding: $gutter*2 0;
+  background-color: #f5f5f5;
+}
+.main-footer{
+  background-color: $dark-blue;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(#fff, .1);
+}
+.bottom-footer{
+  background-color: $dark-blue;
+  padding: 25px 0 35px;
+  .logo-footer{
+    display: inline-block;
+  }
+  p{
+    color: rgba(#fff, .2);
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+  .footer-copy{
+    color: rgba(#fff, .45);
+    font-size: 1.3rem;
+    font-family: baron-g, sans-serif;
+  }
+}
+.footer-menu{
+  li{
+    &.active{
+      text-decoration: underline;
+      background: none;
+      a{
+        background: none;
+      }
+    }
+    a{
+      font-size: 1.5rem;
+      padding: 0 10px;
+      &:hover{
+        text-decoration: underline;
+        background: none;
+      }
+    }
+  }
+}
+nav.soc{
+  padding: 15px 0 20px;
+  ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  li{
+    display: inline-block;
+    a{
+      display: block;
+      text-align: center;
+      border: 1px solid rgba(#fff, .1);
+      border-radius: 10em;
+      width: 52px;
+      height: 52px;
+      line-height: 50px;
+      color: #fff;
+      font-size: 2.4rem;
+      margin: 4px;
+      transition: border-color .25s ease, opacity .25s ease;
+      .fa{
+        transition: opacity .25s ease;
+        opacity: 0.75;
+      }
+      &:hover{
+        border-color: rgba(#fff, .35);
+        .fa{
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+}
+.logo-footer{
+  span{
+    color: $accent;
   }
 }
