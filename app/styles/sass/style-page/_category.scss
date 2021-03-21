@@ -1,41 +1,48 @@
-.page-category{
+.page-category {
   width: 100%;
-  .pattern{
-    &-cat-header{
-      &::before{
+
+  .pattern {
+    &-cat-header {
+      &::before {
         display: none;
       }
     }
   }
-  .type-one-cat{
-    .container-fluid{
+
+  .type-one-cat {
+    .container-fluid {
       max-width: 100%;
       padding: 0;
-      .row{
-        .col-sm-12:first-of-type{
+
+      .row {
+        .col-sm-12:first-of-type {
           display: none;
         }
       }
     }
   }
 }
+
 h1 {
   text-transform: uppercase;
   margin: 0;
   font-size: 3rem;
   font-weight: 800;
 }
+
 h2 {
   text-transform: uppercase;
   margin: 0;
   font-size: 2.3rem;
   font-weight: 800;
 }
-.cat-header{
+
+.cat-header {
   background-size: cover;
   background-position: center;
   position: relative;
-  &::before{
+
+  &::before {
     content: "";
     opacity: 0.25;
     background-color: #000000;
@@ -45,13 +52,15 @@ h2 {
     right: 0;
     bottom: 0;
   }
-  &-block{
+
+  &-block {
     position: relative;
     padding: 100px 80px 100px;
     color: #fff;
     background-color: rgba($dark, .8);
     z-index: 1;
-    &::before{
+
+    &::before {
       content: "";
       opacity: 0.2;
       transition: opacity .25s ease, top .25s ease, left .25s ease, right .25s ease, button .25s ease;
@@ -63,29 +72,35 @@ h2 {
       left: 10px;
       bottom: 10px;
     }
-    p, h1, h2{
+
+    p, h1, h2 {
       margin: 0;
     }
-    h1, h2{
+
+    h1, h2 {
       font-size: 3rem;
       text-transform: uppercase;
       margin-bottom: 15px;
     }
   }
 }
-.cat-list-first{
+
+.cat-list-first {
   padding-top: $gutter;
   background-color: #f5f5f5;
 }
-.type-one-cat{
+
+.type-one-cat {
   background-color: transparent;
   padding: 0;
 }
-.cat-list{
+
+.cat-list {
   padding-top: $gutter;
   background-color: #fff;
 }
-a.cat-list-item{
+
+a.cat-list-item {
   color: $textcolor;
   display: block;
   text-decoration: none;
@@ -93,27 +108,32 @@ a.cat-list-item{
   margin-top: $gutter/1.5;
   padding-bottom: 4px;
   border-bottom: 1px solid #dfdfdf;
-  h2, h3{
+
+  h2, h3 {
     transition: color .25s ease;
     line-height: 1.2;
     font-size: 2.1rem;
     font-weight: 800;
     margin: 0;
   }
-  img{
+
+  img {
     transition: opacity .25s ease;
     margin-bottom: 12px;
   }
-  p{
+
+  p {
     font-size: 1.54rem;
     margin-top: 10px;
   }
-  .date{
+
+  .date {
     margin-top: 5px;
   }
-  &:hover{
-    .pattern{
-      &::before{
+
+  &:hover {
+    .pattern {
+      &::before {
         top: 10px;
         right: 10px;
         bottom: 10px;
@@ -121,24 +141,124 @@ a.cat-list-item{
         opacity: 0.2;
         z-index: 2;
       }
-      img{
+
+      img {
         //opacity: 0.75;
       }
     }
-    h2, h3{
+
+    h2, h3 {
       text-decoration: underline;
       color: $accent;
     }
-    p{
+
+    p {
       color: $textcolor;
     }
   }
-  &:last-child{
+
+  &:last-child {
     border-bottom: 0;
   }
 }
-.main-aside{
+
+.main-aside {
   margin-bottom: $gutter;
+}
+
+.lb-header {
+  border-bottom: 2px solid $accent;
+  padding-bottom: 5px;
+}
+
+.lb-header, .all-posts-header {
+  font-size: 2.1rem;
+  font-weight: 800;
+  margin: 0;
+  text-align: left;
+}
+
+.lb-item {
+  position: relative;
+  padding-left: 120px;
+  background-color: #f0f0f0;
+  margin-bottom: 2px;
+  transition: background-color .25s ease;
+  text-align: left;
+
+  &:hover {
+    background-color: $accent;
+
+    .lb-catname {
+      color: #ffffff;
+    }
+  }
+
+  .lb-body {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+
+    a {
+      color: $textcolor;
+      transition: color .25s ease;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  &-header {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    display: block;
+    font-weight: 500;
+  }
+
+  .date {
+    display: inline-block;
+    margin-left: 20px;
+    color: #aaaaaa;
+    margin-top: 0;
+  }
+
+  .item-comments {
+    .fa {
+      font-size: 1.2rem;
+      margin-right: 5px;
+      color: #aaaaaa;
+    }
+    .item-comments-count{
+      color: #aaaaaa;
+      &:hover{
+        color: $accent;
+        &::after{
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
+}
+.lb-catname{
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: #888888;
+  font-size: 1.4rem;
+  font-weight: 800;
+  max-width: 90px;
+  transition: color .25s ease;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+  &:focus{
+    color: #888888;
+  }
+}
+.lb-footer{
+  line-height: 1.2;
 }
 
 
