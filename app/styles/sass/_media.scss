@@ -81,6 +81,14 @@
       }
     }
   }
+  .cat-header{
+    &-block{
+      padding: 50px;
+      h1, h2{
+        font-size: 2.8rem;
+      }
+    }
+  }
 }
 // xs
 @media (max-width: 576px) {
