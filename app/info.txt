@@ -1,4 +1,4 @@
-Вставка модуля лаков
+Вставка модуля лаков Likely
 <!--#include virtual="/parts/likely.html" -->
 
 Вставка боковой панели
@@ -10,7 +10,7 @@
 Вставка верхнего рекламного блока
 <!--#include virtual="/parts/top-ad.html" -->
 
-Вставка блока "DIY"
+Вставка блока "DTY"
 <!--#include virtual="/parts/type-one.html" -->
 
 Вставкав шапки сайта
